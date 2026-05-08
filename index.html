@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Montador - Móveis e Serviços em Paranaguá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-orange: #ff8c00;
+            --secondary-blue: #0056b3;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #ffffff;
+            --text-gray: #b3b3b3;
+            --price-green: #2ecc71;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--dark-bg); color: var(--text-light); line-height: 1.6; }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-orange);
+        }
+        .logo-area h2 { font-size: 3rem; color: var(--primary-orange); margin: 0; font-weight: 900; }
+        .logo-area p { color: white; letter-spacing: 8px; font-size: 1rem; text-transform: uppercase; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+
+        h2.section-title { text-align: center; margin-bottom: 30px; font-size: 2rem; color: var(--primary-orange); text-transform: uppercase; }
+
+        /* Seção de Produtos (Afiliados) */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover { border-color: var(--secondary-blue); transform: scale(1.02); }
+        
+        .product-img {
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img { max-width: 90%; max-height: 90%; object-fit: contain; }
+
+        .product-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-info h3 { font-size: 1.1rem; margin-bottom: 10px; height: 50px; overflow: hidden; }
+        
+        .btn-affiliate {
+            background-color: var(--secondary-blue);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: auto;
+            transition: 0.3s;
+        }
+        .btn-affiliate:hover { background-color: #004494; }
+
+        /* Botão de Orçamento WhatsApp */
+        .cta-section {
+            background: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 20px;
+            border: 2px dashed var(--primary-orange);
+            margin: 40px 0;
+        }
+        .btn-orcamento {
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botão Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        footer { text-align: center; padding: 40px; color: var(--text-gray); border-top: 1px solid #333; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h2>JESSE</h2>
+            <p>MONTADOR</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Indicações do Jesse: Móveis em Oferta</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Compre pelos links abaixo e garanta móveis de qualidade que eu recomendo para montagem!</p>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/61iV89n8L0L._AC_SL1000_.jpg" alt="Guarda-roupa">
+                </div>
+                <div class="product-info">
+                    <h3>Guarda-Roupa Casal 6 Portas</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 10px;">Ideal para quartos espaçosos.</p>
+                    <a href="SEU_LINK_AQUI" class="btn-affiliate" target="_blank">Ver Preço na Loja</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/51r2XG+Z3kL._AC_SL1000_.jpg" alt="Painel TV">
+                </div>
+                <div class="product-info">
+                    <h3>Painel para TV até 65 Polegadas</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 10px;">Moderno e fácil de limpar.</p>
+                    <a href="SEU_LINK_AQUI" class="btn-affiliate" target="_blank">Ver Preço na Loja</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/61mZ5xOAtML._AC_SL1000_.jpg" alt="Cozinha">
+                </div>
+                <div class="product-info">
+                    <h3>Armário de Cozinha Completa</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 10px;">Aproveitamento máximo de espaço.</p>
+                    <a href="SEU_LINK_AQUI" class="btn-affiliate" target="_blank">Ver Preço na Loja</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="cta-section">
+            <h2>Já comprou seu móvel?</h2>
+            <p style="margin-bottom: 20px;">Eu faço a montagem para você em Paranaguá e Região!</p>
+            <a href="https://wa.me/5541991345212?text=Olá%20Jesse,%20comprei%20um%20móvel%20e%20preciso%20de%20montagem!" class="btn-orcamento" target="_blank">
+                <i class="fab fa-whatsapp"></i> AGENDAR MONTAGEM
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Jesse Henrique - Montador Profissional</p>
+        <p>Paranaguá - PR | (41) 99134-5212</p>
+    </footer>
+
+    <a href="https://wa.me/5541991345212" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
+
